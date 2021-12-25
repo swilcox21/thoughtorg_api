@@ -10,6 +10,7 @@ from django.db import models
 
 class Thought(models.Model):
     content = models.CharField(max_length=2000)
+    folder = models.CharField(max_length=60)
     
     def __str__(self):
         return self.content
